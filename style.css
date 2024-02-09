@@ -28,14 +28,20 @@ nav {
 }
 
 nav ul {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header {
   display: grid;
   grid-template-columns: 50% 50%;
   margin: 30px auto;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
 }
 
 h1 {
@@ -61,6 +67,11 @@ h1 {
   grid-template-columns: 33% 67%;
   background: rgb(10, 10, 10);
   border-radius: 10px;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
 }
 
 button {
@@ -113,6 +124,7 @@ button {
 
   nav li {
     text-align: center;
+    font-size: 0.7rem;
   }
 
   .header {
